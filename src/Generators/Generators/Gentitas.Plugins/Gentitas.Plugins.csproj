@@ -32,11 +32,209 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="DesperateDevs.Analytics">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\DesperateDevs.Analytics.dll</HintPath>
+        </Reference>
+        <Reference Include="DesperateDevs.CodeGeneration">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\DesperateDevs.CodeGeneration.dll</HintPath>
+        </Reference>
+        <Reference Include="DesperateDevs.CodeGeneration.CodeGenerator">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\DesperateDevs.CodeGeneration.CodeGenerator.dll</HintPath>
+        </Reference>
+        <Reference Include="DesperateDevs.CodeGeneration.Plugins">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\DesperateDevs.CodeGeneration.Plugins.dll</HintPath>
+        </Reference>
+        <Reference Include="DesperateDevs.Logging">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\DesperateDevs.Logging.dll</HintPath>
+        </Reference>
+        <Reference Include="DesperateDevs.Roslyn">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\DesperateDevs.Roslyn.dll</HintPath>
+        </Reference>
+        <Reference Include="DesperateDevs.Roslyn.CodeGeneration.Plugins">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\DesperateDevs.Roslyn.CodeGeneration.Plugins.dll</HintPath>
+        </Reference>
+        <Reference Include="DesperateDevs.Serialization">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\DesperateDevs.Serialization.dll</HintPath>
+        </Reference>
+        <Reference Include="DesperateDevs.Utils">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\DesperateDevs.Utils.dll</HintPath>
+        </Reference>
+        <Reference Include="Entitas">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Entitas.dll</HintPath>
+        </Reference>
+        <Reference Include="Entitas.CodeGeneration.Attributes">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Entitas.CodeGeneration.Attributes.dll</HintPath>
+        </Reference>
+        <Reference Include="Entitas.CodeGeneration.Plugins">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Entitas.CodeGeneration.Plugins.dll</HintPath>
+        </Reference>
+        <Reference Include="Entitas.Roslyn.CodeGeneration.Plugins">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Entitas.Roslyn.CodeGeneration.Plugins.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Build">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Microsoft.Build.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Build.Framework">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Microsoft.Build.Framework.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Build.Tasks.CodeAnalysis">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Build.Tasks.Core">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Microsoft.Build.Tasks.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Build.Utilities.Core">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Microsoft.Build.Utilities.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Cci.Extensions">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Microsoft.Cci.Extensions.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.CodeAnalysis">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Microsoft.CodeAnalysis.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.CodeAnalysis.CSharp">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.CodeAnalysis.CSharp.Scripting">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.CodeAnalysis.CSharp.Workspaces">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Microsoft.CodeAnalysis.CSharp.Workspaces.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.CodeAnalysis.Scripting">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Microsoft.CodeAnalysis.Scripting.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.CodeAnalysis.VisualBasic">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Microsoft.CodeAnalysis.VisualBasic.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.CodeAnalysis.VisualBasic.Workspaces">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.CodeAnalysis.Workspaces">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Microsoft.CodeAnalysis.Workspaces.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.CodeAnalysis.Workspaces.Desktop">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Microsoft.CodeAnalysis.Workspaces.Desktop.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.CodeAnalysis.Workspaces.MSBuild">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.DotNet.Build.CloudTestTasks">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Microsoft.DotNet.Build.CloudTestTasks.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.DotNet.Build.Tasks">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Microsoft.DotNet.Build.Tasks.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.DotNet.Build.Tasks.Packaging">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Microsoft.DotNet.Build.Tasks.Packaging.dll</HintPath>
+        </Reference>
+        <Reference Include="PortableTask">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\PortableTask.dll</HintPath>
+        </Reference>
+        <Reference Include="SQLitePCLRaw.batteries_green">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\SQLitePCLRaw.batteries_green.dll</HintPath>
+        </Reference>
+        <Reference Include="SQLitePCLRaw.batteries_v2">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\SQLitePCLRaw.batteries_v2.dll</HintPath>
+        </Reference>
+        <Reference Include="SQLitePCLRaw.core">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\SQLitePCLRaw.core.dll</HintPath>
+        </Reference>
+        <Reference Include="SQLitePCLRaw.provider.e_sqlite3">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\SQLitePCLRaw.provider.e_sqlite3.dll</HintPath>
+        </Reference>
         <Reference Include="System" />
+        <Reference Include="System.AppContext">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.AppContext.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Collections.Immutable">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Collections.Immutable.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Composition.AttributedModel">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Composition.AttributedModel.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Composition.Convention">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Composition.Convention.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Composition.Hosting">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Composition.Hosting.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Composition.Runtime">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Composition.Runtime.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Composition.TypedParts">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Composition.TypedParts.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Console">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Console.dll</HintPath>
+        </Reference>
         <Reference Include="System.Core" />
+        <Reference Include="System.Diagnostics.FileVersionInfo">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Diagnostics.FileVersionInfo.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Diagnostics.StackTrace">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Diagnostics.StackTrace.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.Compression">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.IO.Compression.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.FileSystem">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.IO.FileSystem.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.FileSystem.Primitives">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.IO.FileSystem.Primitives.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Reflection.Metadata">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Reflection.Metadata.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Security.Cryptography.Algorithms">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Security.Cryptography.Algorithms.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Security.Cryptography.Encoding">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Security.Cryptography.Encoding.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Security.Cryptography.Primitives">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Security.Cryptography.Primitives.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Security.Cryptography.X509Certificates">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Security.Cryptography.X509Certificates.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Text.Encoding.CodePages">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Text.Encoding.CodePages.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Threading.Tasks.Dataflow">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Threading.Tasks.Dataflow.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Threading.Tasks.Extensions">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Threading.Tasks.Extensions.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Threading.Thread">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Threading.Thread.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ValueTuple">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.ValueTuple.dll</HintPath>
+        </Reference>
         <Reference Include="System.Xml" />
+        <Reference Include="System.Xml.ReaderWriter">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Xml.ReaderWriter.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Xml.XmlDocument">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Xml.XmlDocument.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Xml.XPath">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Xml.XPath.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Xml.XPath.XDocument">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\System.Xml.XPath.XDocument.dll</HintPath>
+        </Reference>
         <Reference Include="UnityEngine">
             <HintPath>/home/rapuska/Unity/Hub/Editor/2021.3.25f1/Editor/Data/Managed/UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="Xunit.NetCore.Extensions">
+          <HintPath>..\..\..\..\Jenny\Plugins\Entitas.Roslyn\Xunit.NetCore.Extensions.dll</HintPath>
         </Reference>
     </ItemGroup>
     <ItemGroup>
