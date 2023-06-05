@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generators", "Generators\Generators.csproj", "{D6282B18-5AF2-4891-A637-EFF29740EA6E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gentitas.Plugins", "Gentitas.Plugins\Gentitas.Plugins.csproj", "{6E335A89-4D6A-4EED-A7AA-89B88CEF1CC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gentitas.Attributes", "Gentitas.Attributes\Gentitas.Attributes.csproj", "{6765D8C0-E823-460B-98B4-43C6E6D28F9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +10,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D6282B18-5AF2-4891-A637-EFF29740EA6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D6282B18-5AF2-4891-A637-EFF29740EA6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D6282B18-5AF2-4891-A637-EFF29740EA6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D6282B18-5AF2-4891-A637-EFF29740EA6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E335A89-4D6A-4EED-A7AA-89B88CEF1CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E335A89-4D6A-4EED-A7AA-89B88CEF1CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E335A89-4D6A-4EED-A7AA-89B88CEF1CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E335A89-4D6A-4EED-A7AA-89B88CEF1CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6765D8C0-E823-460B-98B4-43C6E6D28F9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6765D8C0-E823-460B-98B4-43C6E6D28F9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6765D8C0-E823-460B-98B4-43C6E6D28F9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6765D8C0-E823-460B-98B4-43C6E6D28F9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
