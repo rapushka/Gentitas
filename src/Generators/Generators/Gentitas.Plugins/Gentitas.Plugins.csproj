@@ -238,8 +238,49 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="MonoBehaviour1.cs" />
+        <Compile Include="Behaviours\BehaviourData.cs" />
+        <Compile Include="Behaviours\ComponentBehaviour\BaseComponentBehaviourGenerator.cs" />
+        <Compile Include="Behaviours\ComponentBehaviour\ComponentBehaviourDataProvider.cs" />
+        <Compile Include="Behaviours\ComponentBehaviour\ComponentBehavioursGenerator.cs" />
+        <Compile Include="Behaviours\ComponentBehaviour\ComponentBehaviourTemplate.cs" />
+        <Compile Include="Behaviours\Constants.cs" />
+        <Compile Include="Behaviours\EntityBehaviour\BaseEntityBehaviourGenerator.cs" />
+        <Compile Include="Behaviours\EntityBehaviour\EntityBehaviourGenerator.cs" />
+        <Compile Include="Behaviours\EntityBehaviour\EntityBehaviourTemplate.cs" />
+        <Compile Include="Behaviours\RegisterSystem\RegisterSystemGenerator.cs" />
+        <Compile Include="Behaviours\RegisterSystem\RegisterSystemTemplate.cs" />
+        <Compile Include="Behaviours\TemplateBase.cs" />
+        <Compile Include="ComponentDataBase.cs" />
+        <Compile Include="Extensions\MemberDataExtensions.cs" />
+        <Compile Include="Extensions\NamedTypeExtensions.cs" />
+        <Compile Include="Extensions\StringExtensions.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Behaviours\BehaviourData.cs.meta" />
+      <Content Include="Behaviours\ComponentBehaviour.meta" />
+      <Content Include="Behaviours\ComponentBehaviour\BaseComponentBehaviourGenerator.cs.meta" />
+      <Content Include="Behaviours\ComponentBehaviour\ComponentBehaviourDataProvider.cs.meta" />
+      <Content Include="Behaviours\ComponentBehaviour\ComponentBehavioursGenerator.cs.meta" />
+      <Content Include="Behaviours\ComponentBehaviour\ComponentBehaviourTemplate.cs.meta" />
+      <Content Include="Behaviours\Constants.cs.meta" />
+      <Content Include="Behaviours\EntityBehaviour.meta" />
+      <Content Include="Behaviours\EntityBehaviour\BaseEntityBehaviourGenerator.cs.meta" />
+      <Content Include="Behaviours\EntityBehaviour\EntityBehaviourGenerator.cs.meta" />
+      <Content Include="Behaviours\EntityBehaviour\EntityBehaviourTemplate.cs.meta" />
+      <Content Include="Behaviours\RegisterSystem.meta" />
+      <Content Include="Behaviours\RegisterSystem\RegisterSystemGenerator.cs.meta" />
+      <Content Include="Behaviours\RegisterSystem\RegisterSystemTemplate.cs.meta" />
+      <Content Include="Behaviours\TemplateBase.cs.meta" />
+      <Content Include="Extensions\MemberDataExtensions.cs.meta" />
+      <Content Include="Extensions\NamedTypeExtensions.cs.meta" />
+      <Content Include="Extensions\StringExtensions.cs.meta" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\Gentitas.Attributes\Gentitas.Attributes.csproj">
+        <Project>{6765d8c0-e823-460b-98b4-43c6e6d28f9a}</Project>
+        <Name>Gentitas.Attributes</Name>
+      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
