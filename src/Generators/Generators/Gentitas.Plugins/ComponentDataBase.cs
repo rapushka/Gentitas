@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using DesperateDevs.CodeGeneration;
 using Entitas.CodeGeneration.Plugins;
 using Microsoft.CodeAnalysis;
@@ -28,13 +30,13 @@ namespace Code.CodeGeneration.Plugins
 			set => this[ContextKey] = value;
 		}
 
-		public static T Create<T>(INamedTypeSymbol type)
+		public static IEnumerable<T> Create<T>(INamedTypeSymbol type)
 			where T : ComponentDataBase, new()
-			=> new T
-			{
-				Name = type.Name,
-				MemberData = type.GetData(),
-				Context = type.GetContext(),
-			};
+		{
+			return type.GetContexts()
+			           .Select(CreateDataInContext);
+
+			T CreateDataInContext(string c) => new T() { Name = type.Name, MemberData = type.GetData(), Context = c, };
+		}
 	}
 }

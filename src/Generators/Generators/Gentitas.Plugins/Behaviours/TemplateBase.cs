@@ -19,10 +19,9 @@ namespace Code.CodeGeneration.Plugins.Behaviours
 			IsFlag = data.IsFlag();
 		}
 
-		protected TemplateBase(string context)
-		{
-			Context = context;
-		}
+		protected TemplateBase(string context) => Context = context;
+
+		protected TemplateBase() { }
 
 		protected string       Name       { get; }
 		protected string       Context    { get; }

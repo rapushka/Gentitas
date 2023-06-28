@@ -1,11 +1,14 @@
+using System.IO;
+
 namespace Code.CodeGeneration.Plugins.Behaviours.RegisterSystem
 {
 	public class RegisterSystemTemplate : TemplateBase
 	{
-		public RegisterSystemTemplate(string context) : base(context) { }
 		protected override string DirectoryName => Constants.RegistrationSystem.DirectoryName;
 
 		protected override string ClassName => "RegisterEntityBehavioursSystem";
+
+		public override string FileName => Path.Combine(DirectoryName, $"{ClassName}.cs");
 
 		public override string FileContent => $@"
 using Entitas;

@@ -29,7 +29,7 @@ namespace Code.CodeGeneration.Plugins.Behaviours
 			   .GetCachedProjectParser(objectCache, _projectPathConfig.projectPath)
 			   .GetTypes()
 			   .WithAttribute<BehaviourAttribute>()
-			   .Select(ComponentDataBase.Create<BehaviourData>)
+			   .SelectMany(ComponentDataBase.Create<BehaviourData>)
 			   .ToArray();
 	}
 }

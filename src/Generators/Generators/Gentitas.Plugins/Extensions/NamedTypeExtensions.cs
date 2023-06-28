@@ -22,8 +22,14 @@ namespace Code.CodeGeneration.Plugins
 		private static bool Any(this ImmutableArray<AttributeData> @this, Func<AttributeData, bool> predicate)
 			=> Enumerable.Any(@this, predicate);
 
-		private static string RemoveAttributeSuffix(this string @this)
-			=> @this.EndsWith(Attribute) ? @this.Substring(0, @this.Length - Attribute.Length) : @this;
+		private static string RemoveAttributeSuffix(this string str)
+			=> str.EndsWith(Attribute) ? str.Substring(0, str.Length - Attribute.Length) : str;
+
+		public static IEnumerable<string> GetContexts(this INamedTypeSymbol @this)
+			=> @this.GetAttributes()
+			        .Select((ad) => ad.AttributeClass)
+			        .Where((a) => a.BaseType?.Name == nameof(ContextAttribute))
+			        .Select((a) => a.Name.RemoveAttributeSuffix());
 
 		public static string GetContext(this INamedTypeSymbol @this)
 			=> @this.GetAttributes()

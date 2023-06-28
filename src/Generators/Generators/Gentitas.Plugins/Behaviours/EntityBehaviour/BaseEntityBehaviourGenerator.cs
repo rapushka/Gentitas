@@ -1,5 +1,4 @@
 using System.IO;
-using System.Linq;
 using DesperateDevs.CodeGeneration;
 
 namespace Code.CodeGeneration.Plugins.Behaviours
@@ -11,15 +10,9 @@ namespace Code.CodeGeneration.Plugins.Behaviours
 		public int    priority     => Constants.GeneratorPriority;
 		public bool   runInDryMode => Constants.GeneratorRunInDryMode;
 
-		public CodeGenFile[] Generate(CodeGeneratorData[] data)
-			=> data
-			   .OfType<BehaviourData>()
-			   .Select((d) => d.Context)
-			   .ToHashSet()
-			   .Select(AsFile)
-			   .ToArray();
+		public CodeGenFile[] Generate(CodeGeneratorData[] data) => Generate().AsArray();
 
-		private CodeGenFile AsFile(string context)
+		private CodeGenFile Generate()
 		{
 			return new CodeGenFile
 			(
